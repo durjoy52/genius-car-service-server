@@ -103,6 +103,10 @@ app.get('/',(req,res)=>{
     res.send('server is on now')
 })
 
+app.get('/hero',(req,res)=>{
+    res.send('Hero meets hero ku')
+})
+
 app.listen(port,()=>{
     console.log('server is running on port',port)
 })
