@@ -8,7 +8,6 @@ const app =express()
 // middleware
 app.use(cors())
 app.use(express.json())
- // verify jwt
 function verifyJWT(req,res,next){
     const authHeader = req.headers.authorization
     if(!authHeader){
